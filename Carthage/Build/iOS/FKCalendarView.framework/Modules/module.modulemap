@@ -1,0 +1,10 @@
+framework module FKCalendarView {
+  umbrella header "FKCalendarView.h"
+
+  export *
+  module * { export * }
+}
+
+module FKCalendarView.Swift {
+    header "FKCalendarView-Swift.h"
+}

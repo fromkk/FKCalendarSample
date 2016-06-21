@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0043DDBEC2D0F31C1D3923C7C577DF17 /* FKValidatorRuleNumeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B9DDA3898FF37105A4EDC9E2CE9BD /* FKValidatorRuleNumeric.swift */; };
+		04AE36A6D1E4A3B85DCA1474BBF0D8EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		0D218186036E798CDE0902E465621E82 /* FKValidator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CABD5F27DEF77FF7AEAD27BD72BE54B7 /* FKValidator-dummy.m */; };
+		0F028C2984CAF173B264E2B40902C809 /* FKValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAC393C0DB39B0352B679915DFE434D /* FKValidator.swift */; };
+		14C64C755512515D69C29E256C0596C7 /* FKValidatorRulePostalCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F156629FA7B61325C835B5106B35758 /* FKValidatorRulePostalCode.swift */; };
+		2A2AC29591F7A64CE462515536FB5EAA /* Pods-CalendarSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8362C6E4009D0E4C9308EFB277644E24 /* Pods-CalendarSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D768089856AC41A56BD6CDB43C45CAC /* FKValidatorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2164FFD609F75658B8BE08E395908A96 /* FKValidatorConfig.swift */; };
+		44D71DA6919D39EC89EBA084B8ABD174 /* FKValidatorRuleMatchPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0461945CD6577D4050E1721374BE89 /* FKValidatorRuleMatchPattern.swift */; };
+		4AAEDE0972AD66375B5D3AC126404081 /* FKValidatorRuleAlphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC109CDCBE814640B79D8C9BC408127 /* FKValidatorRuleAlphabet.swift */; };
+		5ED094C289EAB99B718859F2095E09E4 /* FKValidatorRuleEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6F05B211392D20DAEEFD268E4BB255 /* FKValidatorRuleEmail.swift */; };
+		5F4CC73E5E090FBD0EE3F7D3FE250E32 /* FKValidatorRuleMaxNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F35AE68EF319002A5F6E640CA73EA /* FKValidatorRuleMaxNumber.swift */; };
+		615D4C197D44C02279FB114789B1D3CE /* FKValidatorRuleBetweenNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FCC51DA69A7EE14B196FC232E2760 /* FKValidatorRuleBetweenNumber.swift */; };
+		66503ECE66BB40EE84A6C6B5254D52A6 /* FKValidatorRuleMinLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2717D16EE6186C68BC9919E0C7A72 /* FKValidatorRuleMinLength.swift */; };
+		66AB702A14C49E38ADF3DD3B2419E8C6 /* Pods-CalendarSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7581EEB7DD2768D999DEAA285550A9C2 /* Pods-CalendarSample-dummy.m */; };
+		7730D041EB825E1BB8ADE589CB9AE7FF /* FKValidatorRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49A30A93EF5A644F28C50BD400FBB3 /* FKValidatorRule.swift */; };
+		773EF359332665A5952E6D9CA41C9526 /* FKValidatorRuleExactLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = F810945C2182D18B59E3755E529B00CC /* FKValidatorRuleExactLength.swift */; };
+		9581AACB0A3EC37D7224F9D007666D25 /* FKValidator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B93AF40B52C9D36652A2C1EEDC17DE31 /* FKValidator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1D446561A7E0701C76C636EA4E6541F /* FKValidatorRuleRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99369215E92A9CB24911C870F2D777AD /* FKValidatorRuleRequired.swift */; };
+		B7B9CBC00BE0E78ACA2AFFFAFB4485FA /* FKValidatorRuleMaxLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D6727BFCFE248A0D166B35FB06B499 /* FKValidatorRuleMaxLength.swift */; };
+		C12003D39F521EA273A5D72DF61019D6 /* FKValidatorRuleMatchValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5822BF675E1C6C879B437BDED2AAE /* FKValidatorRuleMatchValue.swift */; };
+		CA48E03EF3D670E882CB2A7CABC75275 /* FKValidatorRuleAlnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE7DB0032346E69F34B094AA1C3AD7 /* FKValidatorRuleAlnum.swift */; };
+		CFF009610925D21BBB374274B09F1892 /* FKValidatorRuleTelephone.swift in Sources */ = {isa = PBXBuildFile; fileRef = C907FA8BA7A70FE43168D32CBD337569 /* FKValidatorRuleTelephone.swift */; };
+		E88CD5A0297A6A8DCB0FF3798A82E6C5 /* FKValidatorRuleMinNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7097E78AEAEC9CD7E87CAB4C20F851 /* FKValidatorRuleMinNumber.swift */; };
+		EAD972AF2A3791DDFC09CD5A8D2BF240 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		EEDB12D41AE89AB5784FCC16E06439B5 /* FKValidatorRuleURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCF0EEE30EAED51F2AF202DEE927DF9 /* FKValidatorRuleURL.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85A62BEE0BA57983338C68B23CDBE3E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F23CCCF126BAFC2CA0C7AC6D694A571;
+			remoteInfo = FKValidator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D6727BFCFE248A0D166B35FB06B499 /* FKValidatorRuleMaxLength.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FKValidatorRuleMaxLength.swift; path = Classes/Rules/FKValidatorRuleMaxLength.swift; sourceTree = "<group>"; };
+		0ACC207DC938EB3AF28D29924388A9AE /* Pods-CalendarSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CalendarSample.debug.xcconfig"; sourceTree = "<group>"; };
+		0FAC393C0DB39B0352B679915DFE434D /* FKValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FKValidator.swift; path = Classes/FKValidator.swift; sourceTree = "<group>"; };
+		1B4B9DDA3898FF37105A4EDC9E2CE9BD /* FKValidatorRuleNumeric.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FKValidatorRuleNumeric.swift; path = Classes/Rules/FKValidatorRuleNumeric.swift; sourceTree = "<group>"; };
+		2164FFD609F75658B8BE08E395908A96 /* FKValidatorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FKValidatorConfig.swift; path = Classes/FKValidatorConfig.swift; sourceTree = "<group>"; };
+		2ADA8D8D648A0FCE5D0E091459D6409A /* FKValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FKValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E6F05B211392D20DAEEFD268E4BB255 /* FKValidatorRuleEmail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FKValidatorRuleEmail.swift; path = Classes/Rules/FKValidatorRuleEmail.swift; sourceTree = "<group>"; };
+		2F7042B8C17C7799405A98F8BE18E682 /* Pods-CalendarSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CalendarSample.modulemap"; sourceTree = "<group>"; };
+		3D8740EBA443A7850B454BFA7D4AC950 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4999B0213756E61F0405FB5E8A0AC026 /* Pods-CalendarSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CalendarSample-acknowledgements.plist"; sourceTree = "<group>"; };
+		49D422DA7412F8DD4C57AD5CE58F287A /* Pods-CalendarSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CalendarSample-frameworks.sh"; sourceTree = "<group>"; };
+		5605AF193497FF1FD18E7F599FF4623F /* FKValidator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FKValidator.modulemap; sourceTree = "<group>"; };
+		61A5822BF675E1C6C879B437BDED2AAE /* FKValidatorRuleMatchValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FKValidatorRuleMatchValue.swift; path = Classes/Rules/FKValidatorRuleMatchValue.swift; sourceTree = "<group>"; };
+		6FCF0EEE30EAED51F2AF202DEE927DF9 /* FKValidatorRuleURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FKValidatorRuleURL.swift; path = Classes/Rules/FKValidatorRuleURL.swift; sourceTree = "<group>"; };
+		7581EEB7DD2768D999DEAA285550A9C2 /* Pods-CalendarSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CalendarSample-dummy.m"; sourceTree = "<group>"; };
+		7D0461945CD6577D4050E1721374BE89 /* FKValidatorRuleMatchPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FKValidatorRuleMatchPattern.swift; path = Classes/Rules/FKValidatorRuleMatchPattern.swift; sourceTree = "<group>"; };
+		7F156629FA7B61325C835B5106B35758 /* FKValidatorRulePostalCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FKValidatorRulePostalCode.swift; path = Classes/Rules/FKValidatorRulePostalCode.swift; sourceTree = "<group>"; };
+		8362C6E4009D0E4C9308EFB277644E24 /* Pods-CalendarSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CalendarSample-umbrella.h"; sourceTree = "<group>"; };
+		8FC109CDCBE814640B79D8C9BC408127 /* FKValidatorRuleAlphabet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FKValidatorRuleAlphabet.swift; path = Classes/Rules/FKValidatorRuleAlphabet.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99369215E92A9CB24911C870F2D777AD /* FKValidatorRuleRequired.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FKValidatorRuleRequired.swift; path = Classes/Rules/FKValidatorRuleRequired.swift; sourceTree = "<group>"; };
+		9D86E63A4A48F7E92A98C67FE70B95DA /* Pods-CalendarSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CalendarSample.release.xcconfig"; sourceTree = "<group>"; };
+		A15F35AE68EF319002A5F6E640CA73EA /* FKValidatorRuleMaxNumber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FKValidatorRuleMaxNumber.swift; path = Classes/Rules/FKValidatorRuleMaxNumber.swift; sourceTree = "<group>"; };
+		A6EEAC233D44C058DD00DA81D733F167 /* FKValidator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FKValidator-prefix.pch"; sourceTree = "<group>"; };
+		B93AF40B52C9D36652A2C1EEDC17DE31 /* FKValidator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FKValidator-umbrella.h"; sourceTree = "<group>"; };
+		BB49A30A93EF5A644F28C50BD400FBB3 /* FKValidatorRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FKValidatorRule.swift; path = Classes/Rules/FKValidatorRule.swift; sourceTree = "<group>"; };
+		BE7097E78AEAEC9CD7E87CAB4C20F851 /* FKValidatorRuleMinNumber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FKValidatorRuleMinNumber.swift; path = Classes/Rules/FKValidatorRuleMinNumber.swift; sourceTree = "<group>"; };
+		C6A038C1EE05020D20F6278A0494FFDF /* Pods-CalendarSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CalendarSample-resources.sh"; sourceTree = "<group>"; };
+		C907FA8BA7A70FE43168D32CBD337569 /* FKValidatorRuleTelephone.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FKValidatorRuleTelephone.swift; path = Classes/Rules/FKValidatorRuleTelephone.swift; sourceTree = "<group>"; };
+		CABD5F27DEF77FF7AEAD27BD72BE54B7 /* FKValidator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FKValidator-dummy.m"; sourceTree = "<group>"; };
+		CB1FCC51DA69A7EE14B196FC232E2760 /* FKValidatorRuleBetweenNumber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FKValidatorRuleBetweenNumber.swift; path = Classes/Rules/FKValidatorRuleBetweenNumber.swift; sourceTree = "<group>"; };
+		CC57F9ED1EBB6A096E3CE556573E5885 /* FKValidator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FKValidator.xcconfig; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D9A35117129D08EBCA91CA473F9D3388 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC5C41FA08B0724A8C5BF43871664C31 /* Pods-CalendarSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CalendarSample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EBE2717D16EE6186C68BC9919E0C7A72 /* FKValidatorRuleMinLength.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FKValidatorRuleMinLength.swift; path = Classes/Rules/FKValidatorRuleMinLength.swift; sourceTree = "<group>"; };
+		F6CE7DB0032346E69F34B094AA1C3AD7 /* FKValidatorRuleAlnum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FKValidatorRuleAlnum.swift; path = Classes/Rules/FKValidatorRuleAlnum.swift; sourceTree = "<group>"; };
+		F810945C2182D18B59E3755E529B00CC /* FKValidatorRuleExactLength.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FKValidatorRuleExactLength.swift; path = Classes/Rules/FKValidatorRuleExactLength.swift; sourceTree = "<group>"; };
+		F85BDB232704960D2FBB6E6C8893EFD4 /* Pods_CalendarSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		847B5E0A53F9C0ED838F047756BF6054 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04AE36A6D1E4A3B85DCA1474BBF0D8EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E69A6FA6D4B32335865D4E288E69DC94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAD972AF2A3791DDFC09CD5A8D2BF240 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07DBD3B4477FB7A30CB485D30567BB65 /* FKValidator */ = {
+			isa = PBXGroup;
+			children = (
+				0FAC393C0DB39B0352B679915DFE434D /* FKValidator.swift */,
+				2164FFD609F75658B8BE08E395908A96 /* FKValidatorConfig.swift */,
+				BB49A30A93EF5A644F28C50BD400FBB3 /* FKValidatorRule.swift */,
+				F6CE7DB0032346E69F34B094AA1C3AD7 /* FKValidatorRuleAlnum.swift */,
+				8FC109CDCBE814640B79D8C9BC408127 /* FKValidatorRuleAlphabet.swift */,
+				CB1FCC51DA69A7EE14B196FC232E2760 /* FKValidatorRuleBetweenNumber.swift */,
+				2E6F05B211392D20DAEEFD268E4BB255 /* FKValidatorRuleEmail.swift */,
+				F810945C2182D18B59E3755E529B00CC /* FKValidatorRuleExactLength.swift */,
+				7D0461945CD6577D4050E1721374BE89 /* FKValidatorRuleMatchPattern.swift */,
+				61A5822BF675E1C6C879B437BDED2AAE /* FKValidatorRuleMatchValue.swift */,
+				00D6727BFCFE248A0D166B35FB06B499 /* FKValidatorRuleMaxLength.swift */,
+				A15F35AE68EF319002A5F6E640CA73EA /* FKValidatorRuleMaxNumber.swift */,
+				EBE2717D16EE6186C68BC9919E0C7A72 /* FKValidatorRuleMinLength.swift */,
+				BE7097E78AEAEC9CD7E87CAB4C20F851 /* FKValidatorRuleMinNumber.swift */,
+				1B4B9DDA3898FF37105A4EDC9E2CE9BD /* FKValidatorRuleNumeric.swift */,
+				7F156629FA7B61325C835B5106B35758 /* FKValidatorRulePostalCode.swift */,
+				99369215E92A9CB24911C870F2D777AD /* FKValidatorRuleRequired.swift */,
+				C907FA8BA7A70FE43168D32CBD337569 /* FKValidatorRuleTelephone.swift */,
+				6FCF0EEE30EAED51F2AF202DEE927DF9 /* FKValidatorRuleURL.swift */,
+				3BA74D39CAAE6D33C594F2B2C4D1C0B2 /* Support Files */,
+			);
+			path = FKValidator;
+			sourceTree = "<group>";
+		};
+		3BA74D39CAAE6D33C594F2B2C4D1C0B2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5605AF193497FF1FD18E7F599FF4623F /* FKValidator.modulemap */,
+				CC57F9ED1EBB6A096E3CE556573E5885 /* FKValidator.xcconfig */,
+				CABD5F27DEF77FF7AEAD27BD72BE54B7 /* FKValidator-dummy.m */,
+				A6EEAC233D44C058DD00DA81D733F167 /* FKValidator-prefix.pch */,
+				B93AF40B52C9D36652A2C1EEDC17DE31 /* FKValidator-umbrella.h */,
+				3D8740EBA443A7850B454BFA7D4AC950 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FKValidator";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5AAF6A05BF171257695751AB660B189F /* Pods-CalendarSample */ = {
+			isa = PBXGroup;
+			children = (
+				D9A35117129D08EBCA91CA473F9D3388 /* Info.plist */,
+				2F7042B8C17C7799405A98F8BE18E682 /* Pods-CalendarSample.modulemap */,
+				DC5C41FA08B0724A8C5BF43871664C31 /* Pods-CalendarSample-acknowledgements.markdown */,
+				4999B0213756E61F0405FB5E8A0AC026 /* Pods-CalendarSample-acknowledgements.plist */,
+				7581EEB7DD2768D999DEAA285550A9C2 /* Pods-CalendarSample-dummy.m */,
+				49D422DA7412F8DD4C57AD5CE58F287A /* Pods-CalendarSample-frameworks.sh */,
+				C6A038C1EE05020D20F6278A0494FFDF /* Pods-CalendarSample-resources.sh */,
+				8362C6E4009D0E4C9308EFB277644E24 /* Pods-CalendarSample-umbrella.h */,
+				0ACC207DC938EB3AF28D29924388A9AE /* Pods-CalendarSample.debug.xcconfig */,
+				9D86E63A4A48F7E92A98C67FE70B95DA /* Pods-CalendarSample.release.xcconfig */,
+			);
+			name = "Pods-CalendarSample";
+			path = "Target Support Files/Pods-CalendarSample";
+			sourceTree = "<group>";
+		};
+		7C9EDF84655327A6354222871D9BAC2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2ADA8D8D648A0FCE5D0E091459D6409A /* FKValidator.framework */,
+				F85BDB232704960D2FBB6E6C8893EFD4 /* Pods_CalendarSample.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				A31862D37527A70E5FA3EEB69B5DC7E9 /* Pods */,
+				7C9EDF84655327A6354222871D9BAC2F /* Products */,
+				9BC3739C2DFABE934416047CD6B22DC2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9BC3739C2DFABE934416047CD6B22DC2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AAF6A05BF171257695751AB660B189F /* Pods-CalendarSample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A31862D37527A70E5FA3EEB69B5DC7E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07DBD3B4477FB7A30CB485D30567BB65 /* FKValidator */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1FD4A94FAA1E4EC49C242EDDC11B4FEC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2AC29591F7A64CE462515536FB5EAA /* Pods-CalendarSample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E62CAEA10C7D4BE32FAF0F3304EF11 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9581AACB0A3EC37D7224F9D007666D25 /* FKValidator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4F23CCCF126BAFC2CA0C7AC6D694A571 /* FKValidator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B2469D7CBA4AC333E78543D8A6869B9 /* Build configuration list for PBXNativeTarget "FKValidator" */;
+			buildPhases = (
+				6E4BCAF29966B7AEBF7B7F7AC0206E43 /* Sources */,
+				847B5E0A53F9C0ED838F047756BF6054 /* Frameworks */,
+				E9E62CAEA10C7D4BE32FAF0F3304EF11 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FKValidator;
+			productName = FKValidator;
+			productReference = 2ADA8D8D648A0FCE5D0E091459D6409A /* FKValidator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6225E401D9C0E64AAC846581964F3C60 /* Pods-CalendarSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E0B015751B5E0E2B07E4F59DD487BDB /* Build configuration list for PBXNativeTarget "Pods-CalendarSample" */;
+			buildPhases = (
+				EE89CCB09134A7A0D944D682A9EAAF2A /* Sources */,
+				E69A6FA6D4B32335865D4E288E69DC94 /* Frameworks */,
+				1FD4A94FAA1E4EC49C242EDDC11B4FEC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				261F4B21F24351B50BABEFCFAC8D5B0C /* PBXTargetDependency */,
+			);
+			name = "Pods-CalendarSample";
+			productName = "Pods-CalendarSample";
+			productReference = F85BDB232704960D2FBB6E6C8893EFD4 /* Pods_CalendarSample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7C9EDF84655327A6354222871D9BAC2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F23CCCF126BAFC2CA0C7AC6D694A571 /* FKValidator */,
+				6225E401D9C0E64AAC846581964F3C60 /* Pods-CalendarSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E4BCAF29966B7AEBF7B7F7AC0206E43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D218186036E798CDE0902E465621E82 /* FKValidator-dummy.m in Sources */,
+				0F028C2984CAF173B264E2B40902C809 /* FKValidator.swift in Sources */,
+				2D768089856AC41A56BD6CDB43C45CAC /* FKValidatorConfig.swift in Sources */,
+				7730D041EB825E1BB8ADE589CB9AE7FF /* FKValidatorRule.swift in Sources */,
+				CA48E03EF3D670E882CB2A7CABC75275 /* FKValidatorRuleAlnum.swift in Sources */,
+				4AAEDE0972AD66375B5D3AC126404081 /* FKValidatorRuleAlphabet.swift in Sources */,
+				615D4C197D44C02279FB114789B1D3CE /* FKValidatorRuleBetweenNumber.swift in Sources */,
+				5ED094C289EAB99B718859F2095E09E4 /* FKValidatorRuleEmail.swift in Sources */,
+				773EF359332665A5952E6D9CA41C9526 /* FKValidatorRuleExactLength.swift in Sources */,
+				44D71DA6919D39EC89EBA084B8ABD174 /* FKValidatorRuleMatchPattern.swift in Sources */,
+				C12003D39F521EA273A5D72DF61019D6 /* FKValidatorRuleMatchValue.swift in Sources */,
+				B7B9CBC00BE0E78ACA2AFFFAFB4485FA /* FKValidatorRuleMaxLength.swift in Sources */,
+				5F4CC73E5E090FBD0EE3F7D3FE250E32 /* FKValidatorRuleMaxNumber.swift in Sources */,
+				66503ECE66BB40EE84A6C6B5254D52A6 /* FKValidatorRuleMinLength.swift in Sources */,
+				E88CD5A0297A6A8DCB0FF3798A82E6C5 /* FKValidatorRuleMinNumber.swift in Sources */,
+				0043DDBEC2D0F31C1D3923C7C577DF17 /* FKValidatorRuleNumeric.swift in Sources */,
+				14C64C755512515D69C29E256C0596C7 /* FKValidatorRulePostalCode.swift in Sources */,
+				B1D446561A7E0701C76C636EA4E6541F /* FKValidatorRuleRequired.swift in Sources */,
+				CFF009610925D21BBB374274B09F1892 /* FKValidatorRuleTelephone.swift in Sources */,
+				EEDB12D41AE89AB5784FCC16E06439B5 /* FKValidatorRuleURL.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE89CCB09134A7A0D944D682A9EAAF2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66AB702A14C49E38ADF3DD3B2419E8C6 /* Pods-CalendarSample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		261F4B21F24351B50BABEFCFAC8D5B0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FKValidator;
+			target = 4F23CCCF126BAFC2CA0C7AC6D694A571 /* FKValidator */;
+			targetProxy = 85A62BEE0BA57983338C68B23CDBE3E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		426EB4E7505131CD2819FDE0D77F52C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC57F9ED1EBB6A096E3CE556573E5885 /* FKValidator.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FKValidator/FKValidator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FKValidator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FKValidator/FKValidator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FKValidator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6CC3A37BDAE4033A3A9CC14BCEEE020C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC57F9ED1EBB6A096E3CE556573E5885 /* FKValidator.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FKValidator/FKValidator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FKValidator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FKValidator/FKValidator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FKValidator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9EFF4BABDB8C30D675BF6B93DAD29CD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D86E63A4A48F7E92A98C67FE70B95DA /* Pods-CalendarSample.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CalendarSample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CalendarSample/Pods-CalendarSample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CalendarSample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C69AA107C67880D627314D851F89FA3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ACC207DC938EB3AF28D29924388A9AE /* Pods-CalendarSample.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CalendarSample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CalendarSample/Pods-CalendarSample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CalendarSample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BEF9D903506B003EA5C2B249729489 /* Debug */,
+				AAF678CED40D3499169D10F63CA0719E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E0B015751B5E0E2B07E4F59DD487BDB /* Build configuration list for PBXNativeTarget "Pods-CalendarSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C69AA107C67880D627314D851F89FA3C /* Debug */,
+				9EFF4BABDB8C30D675BF6B93DAD29CD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B2469D7CBA4AC333E78543D8A6869B9 /* Build configuration list for PBXNativeTarget "FKValidator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				426EB4E7505131CD2819FDE0D77F52C0 /* Debug */,
+				6CC3A37BDAE4033A3A9CC14BCEEE020C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

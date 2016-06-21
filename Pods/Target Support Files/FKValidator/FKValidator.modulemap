@@ -1,0 +1,6 @@
+framework module FKValidator {
+  umbrella header "FKValidator-umbrella.h"
+
+  export *
+  module * { export * }
+}
