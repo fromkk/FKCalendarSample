@@ -11,6 +11,7 @@
 		4F03A9BB1D18CF6000302480 /* CalendarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F03A9BA1D18CF6000302480 /* CalendarViewCell.swift */; };
 		4F03A9BD1D18D47800302480 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F03A9BC1D18D47800302480 /* extension.swift */; };
 		4F03A9BF1D18D66D00302480 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F03A9BE1D18D66D00302480 /* InputViewController.swift */; };
+		4F25D46E1D1A203400416BBC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F25D4701D1A203400416BBC /* Localizable.strings */; };
 		4FCA8A041D18CBE00075E75A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA8A031D18CBE00075E75A /* AppDelegate.swift */; };
 		4FCA8A061D18CBE00075E75A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA8A051D18CBE00075E75A /* ViewController.swift */; };
 		4FCA8A091D18CBE00075E75A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCA8A071D18CBE00075E75A /* Main.storyboard */; };
@@ -43,6 +44,8 @@
 		4F03A9BA1D18CF6000302480 /* CalendarViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewCell.swift; sourceTree = "<group>"; };
 		4F03A9BC1D18D47800302480 /* extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		4F03A9BE1D18D66D00302480 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		4F25D46F1D1A203400416BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4F25D4711D1A204300416BBC /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4FCA8A001D18CBE00075E75A /* CalendarSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCA8A031D18CBE00075E75A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FCA8A051D18CBE00075E75A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +108,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		4F25D46B1D1A201700416BBC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F25D4701D1A203400416BBC /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		4FCA89F71D18CBE00075E75A = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +141,7 @@
 		4FCA8A021D18CBE00075E75A /* CalendarSample */ = {
 			isa = PBXGroup;
 			children = (
+				4F25D46B1D1A201700416BBC /* Resources */,
 				4F03A9B91D18CF4B00302480 /* Views */,
 				4FCA8A031D18CBE00075E75A /* AppDelegate.swift */,
 				4FCA8A051D18CBE00075E75A /* ViewController.swift */,
@@ -260,6 +272,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 4FCA89F71D18CBE00075E75A;
 			productRefGroup = 4FCA8A011D18CBE00075E75A /* Products */;
@@ -279,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FCA8A0E1D18CBE00075E75A /* LaunchScreen.storyboard in Resources */,
+				4F25D46E1D1A203400416BBC /* Localizable.strings in Resources */,
 				4FCA8A0B1D18CBE00075E75A /* Assets.xcassets in Resources */,
 				4FCA8A091D18CBE00075E75A /* Main.storyboard in Resources */,
 			);
@@ -408,6 +422,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4F25D4701D1A203400416BBC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F25D46F1D1A203400416BBC /* Base */,
+				4F25D4711D1A204300416BBC /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		4FCA8A071D18CBE00075E75A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

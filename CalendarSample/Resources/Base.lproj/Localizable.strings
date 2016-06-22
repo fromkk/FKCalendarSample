@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  CalendarSample
+
+  Created by Kazuya Ueoka on 2016/06/22.
+  Copyright © 2016年 fromKK. All rights reserved.
+*/
+"sun" = "Sun";
+"mon" = "Mon";
+"tue" = "Tue";
+"wed" = "Wed";
+"thu" = "Thu";
+"fri" = "Fri";
+"sat" = "Sat";
+"input.title" = "Title";
+"input.description" = "Description";
+"close" = "Close";
+"save" = "Save";
+"input.title.required" = "Title is required.";
+"input.title.maxlength" = "Title must be less than 10 characters";
+"input.description.required" = "Description is required.";
+"input.description.maxlength" = "Description must be less than 100 characters";
+"error" = "error";
+"OK" = "OK";
+"valid" = "Valid!";
+

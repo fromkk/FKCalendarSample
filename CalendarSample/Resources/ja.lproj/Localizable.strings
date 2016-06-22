@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  CalendarSample
+
+  Created by Kazuya Ueoka on 2016/06/22.
+  Copyright © 2016年 fromKK. All rights reserved.
+*/
+"sun" = "日";
+"mon" = "月";
+"tue" = "火";
+"wed" = "水";
+"thu" = "木";
+"fri" = "金";
+"sat" = "土";
+"input.title" = "件名";
+"input.description" = "概要";
+"close" = "閉じる";
+"save" = "保存";
+"input.title.required" = "件名を入力して下さい。";
+"input.title.maxlength" = "件名は10文字以内で入力して下さい。";
+"input.description.required" = "概要を入力して下さい。";
+"input.description.maxlength" = "概要は100文字以内で入力して下さい。";
+"error" = "エラー";
+"OK" = "OK";
+"valid" = "Valid!!";
