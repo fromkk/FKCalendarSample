@@ -24,10 +24,10 @@ public class FKValidatorRuleMaxLength :FKValidatorRule
     }
     
     override func _commonInit() {
-        self.errorCode = .MaxLength
+        self.errorCode = .maxLength
     }
     
-    public override func run(value: String) -> Bool {
+    public override func run(_ value: String) -> Bool {
         if (super.run(value))
         {
             return true

@@ -24,6 +24,6 @@ public class FKValidatorRulePostalCode :FKValidatorRuleMatchPattern
     
     override func _commonInit()
     {
-        self.errorCode = FKValidatorErrorCode.PostalCode
+        self.errorCode = FKValidatorErrorCode.postalCode
     }
 }

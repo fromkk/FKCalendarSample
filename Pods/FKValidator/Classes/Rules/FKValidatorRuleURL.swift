@@ -22,6 +22,6 @@ public class FKValidatorRuleURL :FKValidatorRuleMatchPattern
     }
     
     override func _commonInit() {
-        self.errorCode = FKValidatorErrorCode.URL
+        self.errorCode = FKValidatorErrorCode.url
     }
 }

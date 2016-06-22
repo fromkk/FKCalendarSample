@@ -27,16 +27,16 @@ public class FKValidatorRuleMatchPattern :FKValidatorRule
     }
     
     override func _commonInit() {
-        self.errorCode = .MatchPattern
+        self.errorCode = .matchPattern
     }
     
-    public override func run(value: String) -> Bool {
+    public override func run(_ value: String) -> Bool {
         if (super.run(value))
         {
             return true
         }
         
-        let regexp :NSRegularExpression = try! NSRegularExpression(pattern: self.pattern, options: [.CaseInsensitive, .DotMatchesLineSeparators] )
-        return regexp.matchesInString(value, options: [], range: NSMakeRange(0, value.characters.count)).count > 0
+        let regexp :RegularExpression = try! RegularExpression(pattern: self.pattern, options: [.caseInsensitive, .dotMatchesLineSeparators] )
+        return regexp.matches(in: value, options: [], range: NSMakeRange(0, value.characters.count)).count > 0
     }
 }

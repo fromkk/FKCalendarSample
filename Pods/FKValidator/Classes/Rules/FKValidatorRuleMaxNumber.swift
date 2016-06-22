@@ -27,10 +27,10 @@ public class FKValidatorRuleMaxNumber :FKValidatorRule
     }
     
     override func _commonInit() {
-        self.errorCode = .MaxNumber
+        self.errorCode = .maxNumber
     }
     
-    public override func run(value: String) -> Bool {
+    public override func run(_ value: String) -> Bool {
         if (super.run(value))
         {
             return true

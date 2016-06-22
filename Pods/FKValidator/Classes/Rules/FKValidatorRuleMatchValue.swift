@@ -28,10 +28,10 @@ public class FKValidatorRuleMatchValue :FKValidatorRule
     
     override func _commonInit()
     {
-        self.errorCode = .MatchValue
+        self.errorCode = .matchValue
     }
     
-    public override func run(value: String) -> Bool
+    public override func run(_ value: String) -> Bool
     {
         if (super.run(value))
         {

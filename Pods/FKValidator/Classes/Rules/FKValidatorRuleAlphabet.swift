@@ -23,6 +23,6 @@ public class FKValidatorRuleAlphabet :FKValidatorRuleMatchPattern
     }
     
     override func _commonInit() {
-        self.errorCode = FKValidatorErrorCode.Alphabet
+        self.errorCode = FKValidatorErrorCode.alphabet
     }
 }

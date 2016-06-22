@@ -12,19 +12,19 @@ import FKCalendarView
 extension FKCalendarViewWeekday {
     func toString() -> String {
         switch self {
-        case .Sunday:
+        case .sunday:
             return NSLocalizedString("sun", comment: "sun")
-        case .Monday:
+        case .monday:
             return NSLocalizedString("mon", comment: "mon")
-        case .Tuesday:
+        case .tuesday:
             return NSLocalizedString("tue", comment: "tue")
-        case .Wednesday:
+        case .wednesday:
             return NSLocalizedString("wed", comment: "wed")
-        case .Thursday:
+        case .thursday:
             return NSLocalizedString("thu", comment: "thu")
-        case .Friday:
+        case .friday:
             return NSLocalizedString("fri", comment: "fri")
-        case .Saturday:
+        case .saturday:
             return NSLocalizedString("sat", comment: "sat")
         }
     }

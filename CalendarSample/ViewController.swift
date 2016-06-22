@@ -11,14 +11,14 @@ import FKCalendarView
 
 class ViewController: UIViewController {
 
-    let date: NSDate = NSDate()
+    let date: Date = Date()
 
     lazy var calendarView: FKCalendarView = {
-        let result: FKCalendarView = FKCalendarView(frame: self.view.bounds, date: NSDate())
+        let result: FKCalendarView = FKCalendarView(frame: self.view.bounds, date: Date())
         result.calendarDelegate = self
         result.translatesAutoresizingMaskIntoConstraints = false
-        result.registerClass(WeekdayCell.self, forCellWithReuseIdentifier: WeekdayCell.cellIdentifier)
-        result.registerClass(CalendarViewCell.self, forCellWithReuseIdentifier: CalendarViewCell.cellIdentifier)
+        result.register(WeekdayCell.self, forCellWithReuseIdentifier: WeekdayCell.cellIdentifier)
+        result.register(CalendarViewCell.self, forCellWithReuseIdentifier: CalendarViewCell.cellIdentifier)
         return result
     }()
 
@@ -29,10 +29,10 @@ class ViewController: UIViewController {
 
         self.view.addSubview(self.calendarView)
         self.view.addConstraints([
-            NSLayoutConstraint(item: self.calendarView, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Width, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: self.calendarView, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Height, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: self.calendarView, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.CenterY, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: self.calendarView, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0.0)
+            NSLayoutConstraint(item: self.calendarView, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.width, multiplier: 1.0, constant: 0.0),
+            NSLayoutConstraint(item: self.calendarView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.height, multiplier: 1.0, constant: 0.0),
+            NSLayoutConstraint(item: self.calendarView, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.centerY, multiplier: 1.0, constant: 0.0),
+            NSLayoutConstraint(item: self.calendarView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.centerX, multiplier: 1.0, constant: 0.0)
             ])
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -44,16 +44,16 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: FKCalendarViewDelegate {
-    func dequeueReusableWeekdayCellWithCalendarView(calendarView: FKCalendarView, indexPath: NSIndexPath, weekDay: FKCalendarViewWeekday) -> UICollectionViewCell {
-        guard let cell: WeekdayCell = calendarView.dequeueReusableCellWithReuseIdentifier(WeekdayCell.cellIdentifier, forIndexPath: indexPath) as? WeekdayCell else {
+    func dequeueReusableWeekdayCellWithCalendarView(_ calendarView: FKCalendarView, indexPath: IndexPath, weekDay: FKCalendarViewWeekday) -> UICollectionViewCell {
+        guard let cell: WeekdayCell = calendarView.dequeueReusableCell(withReuseIdentifier: WeekdayCell.cellIdentifier, for: indexPath) as? WeekdayCell else {
             fatalError("weekday cell generate failed")
         }
         cell.weekdayLabel.text = weekDay.toString()
         return cell
     }
 
-    func dequeueReusableDateCellWithCalendarView(calendarView: FKCalendarView, indexPath: NSIndexPath, date: NSDate) -> UICollectionViewCell {
-        guard let cell: CalendarViewCell = calendarView.dequeueReusableCellWithReuseIdentifier(CalendarViewCell.cellIdentifier, forIndexPath: indexPath) as? CalendarViewCell else {
+    func dequeueReusableDateCellWithCalendarView(_ calendarView: FKCalendarView, indexPath: IndexPath, date: Date) -> UICollectionViewCell {
+        guard let cell: CalendarViewCell = calendarView.dequeueReusableCell(withReuseIdentifier: CalendarViewCell.cellIdentifier, for: indexPath) as? CalendarViewCell else {
             fatalError("cell generate failed")
         }
         cell.dateLabel.text = String(date.day)
@@ -62,10 +62,10 @@ extension ViewController: FKCalendarViewDelegate {
         return cell
     }
 
-    func calendarView(calendarView: FKCalendarView, didSelectDayCell cell: UICollectionViewCell, date: NSDate) {
+    func calendarView(_ calendarView: FKCalendarView, didSelectDayCell cell: UICollectionViewCell, date: Date) {
         let viewController: InputViewController = InputViewController()
         viewController.date = date
         let navigationController: UINavigationController = UINavigationController(rootViewController: viewController)
-        self.presentViewController(navigationController, animated: true, completion: nil)
+        self.present(navigationController, animated: true, completion: nil)
     }
 }

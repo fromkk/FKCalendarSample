@@ -10,7 +10,7 @@ import Foundation
 
 public class FKValidatorRule :NSObject
 {
-    var errorCode :FKValidatorErrorCode = .Empty
+    var errorCode :FKValidatorErrorCode = .empty
     var errorMessage :String = ""
     var error :NSError
         {
@@ -40,7 +40,7 @@ public class FKValidatorRule :NSObject
         
     }
     
-    public func run(value :String) -> Bool
+    public func run(_ value :String) -> Bool
     {
         return 0 == value.characters.count
     }

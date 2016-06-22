@@ -24,10 +24,10 @@ public class FKValidatorRuleMinLength :FKValidatorRule
     }
     
     override func _commonInit() {
-        self.errorCode = .MinLength
+        self.errorCode = .minLength
     }
     
-    public override func run(value: String) -> Bool {
+    public override func run(_ value: String) -> Bool {
         if (super.run(value))
         {
             return true

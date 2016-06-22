@@ -23,6 +23,6 @@ public class FKValidatorRuleTelephone :FKValidatorRuleMatchPattern
     }
     
     public override func _commonInit() {
-        self.errorCode = FKValidatorErrorCode.Telephone
+        self.errorCode = FKValidatorErrorCode.telephone
     }
 }

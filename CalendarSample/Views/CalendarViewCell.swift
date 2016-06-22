@@ -13,8 +13,8 @@ class WeekdayCell: UICollectionViewCell {
     lazy var weekdayLabel: UILabel = {
         let result: UILabel = UILabel()
         result.translatesAutoresizingMaskIntoConstraints = false
-        result.textAlignment = NSTextAlignment.Center
-        result.font = UIFont.boldSystemFontOfSize(12.0)
+        result.textAlignment = NSTextAlignment.center
+        result.font = UIFont.boldSystemFont(ofSize: 12.0)
         result.textColor = UIColor(white: 0.2, alpha: 1.0)
         return result
     }()
@@ -23,10 +23,10 @@ class WeekdayCell: UICollectionViewCell {
 
         self.addSubview(self.weekdayLabel)
         self.addConstraints([
-            NSLayoutConstraint(item: self.weekdayLabel, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Width, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: self.weekdayLabel, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Height, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: self.weekdayLabel, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: self.weekdayLabel, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.CenterY, multiplier: 1.0, constant: 0.0)
+            NSLayoutConstraint(item: self.weekdayLabel, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.width, multiplier: 1.0, constant: 0.0),
+            NSLayoutConstraint(item: self.weekdayLabel, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.height, multiplier: 1.0, constant: 0.0),
+            NSLayoutConstraint(item: self.weekdayLabel, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerX, multiplier: 1.0, constant: 0.0),
+            NSLayoutConstraint(item: self.weekdayLabel, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerY, multiplier: 1.0, constant: 0.0)
             ])
     }
 
@@ -40,8 +40,8 @@ class CalendarViewCell: UICollectionViewCell {
     lazy var dateLabel: UILabel = {
         let result: UILabel = UILabel()
         result.translatesAutoresizingMaskIntoConstraints = false
-        result.textAlignment = NSTextAlignment.Center
-        result.font = UIFont.systemFontOfSize(12.0)
+        result.textAlignment = NSTextAlignment.center
+        result.font = UIFont.systemFont(ofSize: 12.0)
         result.textColor = UIColor(white: 0.2, alpha: 1.0)
         return result
     }()
@@ -51,10 +51,10 @@ class CalendarViewCell: UICollectionViewCell {
 
         self.addSubview(self.dateLabel)
         self.addConstraints([
-            NSLayoutConstraint(item: self.dateLabel, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Width, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: self.dateLabel, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Height, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: self.dateLabel, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: self.dateLabel, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.CenterY, multiplier: 1.0, constant: 0.0)
+            NSLayoutConstraint(item: self.dateLabel, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.width, multiplier: 1.0, constant: 0.0),
+            NSLayoutConstraint(item: self.dateLabel, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.height, multiplier: 1.0, constant: 0.0),
+            NSLayoutConstraint(item: self.dateLabel, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerX, multiplier: 1.0, constant: 0.0),
+            NSLayoutConstraint(item: self.dateLabel, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerY, multiplier: 1.0, constant: 0.0)
             ])
     }
 

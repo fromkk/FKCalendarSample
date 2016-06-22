@@ -10,21 +10,21 @@ import Foundation
 
 public enum FKValidatorErrorCode :Int
 {
-    case Empty
-    case Required
-    case ExactLength
-    case MinLength
-    case MaxLength
-    case MinNumber
-    case MaxNumber
-    case BetweenNumber
-    case Numeric
-    case Alphabet
-    case Alnum
-    case PostalCode
-    case Telephone
-    case Email
-    case URL
-    case MatchValue
-    case MatchPattern
+    case empty
+    case required
+    case exactLength
+    case minLength
+    case maxLength
+    case minNumber
+    case maxNumber
+    case betweenNumber
+    case numeric
+    case alphabet
+    case alnum
+    case postalCode
+    case telephone
+    case email
+    case url
+    case matchValue
+    case matchPattern
 }

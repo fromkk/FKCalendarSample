@@ -27,10 +27,10 @@ public class FKValidatorRuleExactLength :FKValidatorRule
     }
     
     override func _commonInit() {
-        self.errorCode = .ExactLength
+        self.errorCode = .exactLength
     }
     
-    public override func run(value: String) -> Bool {
+    public override func run(_ value: String) -> Bool {
         if (super.run(value))
         {
             return true

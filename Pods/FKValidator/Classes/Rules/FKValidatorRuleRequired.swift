@@ -23,10 +23,10 @@ public class FKValidatorRuleRequired :FKValidatorRule
     override func _commonInit() {
         super._commonInit()
         
-        self.errorCode = .Required
+        self.errorCode = .required
     }
     
-    public override func run(value :String) -> Bool
+    public override func run(_ value :String) -> Bool
     {
         return !super.run(value)
     }

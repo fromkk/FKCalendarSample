@@ -22,6 +22,6 @@ public class FKValidatorRuleAlnum :FKValidatorRuleMatchPattern
     }
     
     override func _commonInit() {
-        self.errorCode = FKValidatorErrorCode.Alnum
+        self.errorCode = FKValidatorErrorCode.alnum
     }
 }

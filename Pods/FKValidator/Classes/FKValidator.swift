@@ -13,23 +13,23 @@ public class FKValidator :NSObject
     public var rules: Array <FKValidatorRule> = []
     public var errors :Array <NSError> = []
     
-    public func addRule(rule :FKValidatorRule) -> Self
+    public func addRule(_ rule :FKValidatorRule) -> Self
     {
         self.rules.append(rule)
         return self
     }
     
-    public func addRules(rules :Array<FKValidatorRule>) -> Self
+    public func addRules(_ rules :Array<FKValidatorRule>) -> Self
     {
         for rule in rules
         {
-            self.addRule(rule)
+            _ = self.addRule(rule)
         }
         
         return self
     }
     
-    public func run(value :String) -> Bool
+    public func run(_ value :String) -> Bool
     {
         var result :Bool = true
         self.errors = []

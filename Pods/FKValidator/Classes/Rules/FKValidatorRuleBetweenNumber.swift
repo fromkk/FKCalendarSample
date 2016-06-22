@@ -28,10 +28,10 @@ public class FKValidatorRuleBetweenNumber :FKValidatorRule
     }
     
     override func _commonInit() {
-        self.errorCode = .BetweenNumber
+        self.errorCode = .betweenNumber
     }
     
-    public override func run(value: String) -> Bool {
+    public override func run(_ value: String) -> Bool {
         if (super.run(value))
         {
             return true

@@ -23,6 +23,6 @@ public class FKValidatorRuleEmail :FKValidatorRuleMatchPattern
     }
     
     override func _commonInit() {
-        self.errorCode = FKValidatorErrorCode.Email
+        self.errorCode = FKValidatorErrorCode.email
     }
 }
